@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+{#{% for section in ['section_intro', 'section_projects', 'section_twitter', 'section_end'] %}
+{% set img = ""  backgrounds[loop.index0] %}#}
+
+{% for section in SECTIONS %}
+{% set img = "" %}
+
+<section>
+<div class="bg" style="background-image:url('{{ img.img_url }}');"></div>
+<div class="bg bg-blur" style="background-image:url('{{ img.img_url }}');"></div>
+<div class="content">
+    {% include "%s.html" % section %}
+</div> <!-- /.content -->    
+</section>
+
+{% endfor %}
+{% endblock %}
