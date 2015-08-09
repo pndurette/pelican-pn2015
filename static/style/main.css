@@ -253,51 +253,18 @@ div.project-text p {
 	color: #3FA9F5; /* site blue */
 }
 
-/*---- Chevron ------*/
-/* Thanks: http://stackoverflow.com/questions/15938933/creating-a-chevron-in-css */
-
-.chevron:hover { cursor:pointer; } 
-
-.chevron {
-    position: relative;
-    top: 100px;
-    text-align: center;
-    padding:7px;
-    margin-bottom: 6px;
-    height: 10px;
-    width: 100px;
+.icon-box {
+    margin: 20px 0;
 }
 
-.chevron:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 51%;
-    /*background: #E6E6E6;*/ /* background gray */
-    background: white;
-    -webkit-transform: skew(0deg, 10deg);
-    -moz-transform: skew(0deg, 10deg);
-    -ms-transform: skew(0deg, 10deg);
-    -o-transform: skew(0deg, 10deg);
-    transform: skew(0deg, 10deg);
+.icon-box a {
+    margin-right: 10px;
 }
 
-.chevron:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    /*background: #E6E6E6;*/ /* background gray */
-    background: white;
-    -webkit-transform: skew(0deg, -10deg);
-    -moz-transform: skew(0deg, -10deg);
-    -ms-transform: skew(0deg, -10deg);
-    -o-transform: skew(0deg, -10deg);
-    transform: skew(0deg, -10deg);
+.icon-box a:hover {
+    background-color: white;
+    color: #3FA9F5; /* site blue */
+    background-color: transparent;
 }
 
 .sticky {
